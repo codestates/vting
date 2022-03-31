@@ -75,7 +75,7 @@ function Home({ text }: Props) {
 
 function Testfunc() {
   const userInfo = useSelector((state: RootState) => state.userInfo);
-  const serverURL: string = "http://localhost:8000";
+  const serverURL: string = "https://test.v-ting.net";
   let accessToken = localStorage.getItem("accessToken");
   const [newNick, setNewNick] = useState("");
 

@@ -24,7 +24,7 @@ interface InOrUp {
   signIn: boolean;
 }
 
-const serverURL: string = "http://localhost:8000";
+const serverURL: string = "https://test.v-ting.net";
 
 function SignIn() {
   const dispatch = useDispatch();

@@ -9,10 +9,9 @@ import { RootState, setIsLogin } from "../store/index";
 import axios from "axios";
 // import jwt from "jsonwebtoken";
 
-const serverURL: string = "http://localhost:8000";
+const serverURL: string = "https://test.v-ting.net";
 
 function Navbar() {
-
   let location = useLocation();
 
   useEffect(() => {

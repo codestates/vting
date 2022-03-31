@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 // import { RootState } from "../store/index";
 import "./MyPage.scss";
 
-const serverURL: string = "http://localhost:8000";
+const serverURL: string = "https://test.v-ting.net";
 
 function MyPage() {
   // const userInfo = useSelector((state: RootState) => state.userInfo);

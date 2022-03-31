@@ -17,7 +17,7 @@ function VoteBody() {
 
   const alert = useAlert();
 
-  const serverURL = "http://localhost:8000";
+  const serverURL = "https://test.v-ting.net";
 
   const sendNewVote = async () => {
     if (isLogin.login) {

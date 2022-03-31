@@ -56,7 +56,7 @@ function VoteAlert({ message, options, close, style }: AlertTemplateProps) {
   const [newVotePasswordRe, setNewVotePasswordRe] = useState("");
   const [isMatch, setIsMatch] = useState(true);
 
-  const serverURL = "http://localhost:8000";
+  const serverURL = "https://test.v-ting.net";
 
   useEffect(() => {
     if (newVotePassword === newVotePasswordRe) {

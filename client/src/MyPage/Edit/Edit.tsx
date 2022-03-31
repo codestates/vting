@@ -10,7 +10,7 @@ interface PatchUser {
   password: string;
 }
 
-const serverURL: string = "http://localhost:8000";
+const serverURL: string = "https://test.v-ting.net";
 
 function Edit() {
   const dispatch = useDispatch();
