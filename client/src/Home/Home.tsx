@@ -19,7 +19,7 @@ function Home() {
 
 function Testfunc() {
   const userInfo = useSelector((state: RootState) => state.userInfo);
-  const serverURL: string = "http://localhost:8000";
+  const serverURL: string = process.env.SERVER_URL as string;
   let accessToken = localStorage.getItem("accessToken");
 
   const onChangeImg = async (e: React.ChangeEvent<HTMLInputElement>) => {

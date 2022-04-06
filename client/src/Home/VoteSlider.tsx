@@ -23,7 +23,7 @@ export default function VoteSlider() {
     },
   ]);
 
-  const serverURL: string = "http://localhost:8000";
+  const serverURL: string = process.env.SERVER_URL as string;
   useEffect(() => {
     async function getAllVotes() {
       const response = await axios.get(`${serverURL}/allvotes`);
@@ -49,7 +49,7 @@ export default function VoteSlider() {
         <Slider {...settings}>
           {allVotes.map((el, idx) => (
             <a
-              href={`http://vote.localhost:3000/${el.url}`}
+              href={`${process.env.CLIENT_URL}/${el.url}`}
               key={idx}
               target="_blank"
               rel="noopener noreferrer"
